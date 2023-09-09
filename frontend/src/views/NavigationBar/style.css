@@ -1,0 +1,15 @@
+/* 추가 컨텐츠가 숨겨져 있는 초기 상태 */
+.additional-effect {
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  /* 아이콘 클릭 시 추가 컨텐츠가 나타나는 상태 */
+  .additional-effect.visible {
+    transform-origin: top;
+    transform: scaleY(1);
+    opacity: 1;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
